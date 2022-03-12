@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="logo.png">
+    <title>Netflix</title>
+    
+</head>
+<body>
+    <div class="upper">
+        <div class="logo">
+            <a href="#">
+                <img src="Netflix-Logo.png" class="img-logo"/>
+            </a>
+        </div>
+        <div class="login-div">
+            <form class="login">
+                <h1>Sign Up</h1>
+                <div class="input-text">
+                  <input type="text" id="inputName" name="firstName" placeholder="First Name" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                  <div class="warning-input" id="warningName">
+                     Name must contain only alphabets
+                  </div>
+              </div>
+                <div class="input-text">
+                    <input type="text" id="inputEmail" name="email" placeholder="Email or phone number" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningEmail">
+                        Please enter a valid email or phone number.
+                    </div>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" id="inputPassword" name="password" placeholder="Password" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                    <div class="warning-input" id="warningPassword">
+                        Your password must contain between 4 and 60 characters.
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="signin-button">Sign In</button>
+                </div>
+              </br>
+                <div class="new-members">
+                    Already a user? <a href="login.html" class="signup-link">Sign in now</a>
+                </div>
+                <div class="protection color_link help">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Questions? Call 000-800-040-1843</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Watch for Free</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Netflix Originals</a></li>
+            </ul>
+        </div>
+        <div>
+                <select class="fa select-language">
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Fran&ccedil;ais</option>
+                </select>
+        </div>
+    </footer>   
+    <script src="login.js"></script>
+</body>
+</html>
